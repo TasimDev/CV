@@ -66,3 +66,29 @@ li {
 #navbar.active {
     transform: translateX(0);
 }
+
+/*****************Main*********/
+#main {
+    #profile_img {
+        width: 376px;
+
+        @media (min-width: 770px) {
+            width: 700px;
+        }
+
+        @media (max-width: 428px) {
+            width: 290px;
+        }
+    }
+
+    .main-title {
+        margin-left: 6em;
+        margin-bottom: 12em;
+
+        @media (min-width: 772px) {
+            margin: 0;
+        }
+
+      
+    }
+}

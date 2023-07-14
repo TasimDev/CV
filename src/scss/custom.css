@@ -55,4 +55,28 @@ li {
 
 #navbar.active {
   transform: translateX(0);
+}
+
+/*****************Main*********/
+#main #profile_img {
+  width: 376px;
+}
+@media (min-width: 770px) {
+  #main #profile_img {
+    width: 700px;
+  }
+}
+@media (max-width: 428px) {
+  #main #profile_img {
+    width: 290px;
+  }
+}
+#main .main-title {
+  margin-left: 6em;
+  margin-bottom: 12em;
+}
+@media (min-width: 772px) {
+  #main .main-title {
+    margin: 0;
+  }
 }/*# sourceMappingURL=custom.css.map */
