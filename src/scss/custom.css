@@ -134,4 +134,81 @@ li {
   #about .container #about-info #info .list-group {
     font-size: 1rem;
   }
+}
+
+/*************Skills*************/
+#skills #list {
+  flex-direction: row;
+}
+@media screen and (max-width: 700px) {
+  #skills #list {
+    flex-direction: column;
+  }
+}
+#skills #list .list-item-1,
+#skills #list .list-item-2 {
+  width: 50%;
+}
+@media screen and (max-width: 700px) {
+  #skills #list .list-item-1,
+  #skills #list .list-item-2 {
+    width: 100%;
+  }
+}
+#skills #list .list-item-1 .item,
+#skills #list .list-item-2 .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+#skills #list .list-item-1 .item .item-title,
+#skills #list .list-item-2 .item .item-title {
+  display: flex;
+  justify-content: space-between;
+}
+#skills #list .list-item-1 .item .line,
+#skills #list .list-item-2 .item .line {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background: #ff7b7b;
+}
+#skills #list .list-item-1 .item .line::before,
+#skills #list .list-item-2 .item .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background: #DD2424;
+}
+#skills #list .list-item-1 .item .line.line-html::before,
+#skills #list .list-item-2 .item .line.line-html::before {
+  width: 100%;
+}
+#skills #list .list-item-1 .item .line.line-stylesheet::before,
+#skills #list .list-item-2 .item .line.line-stylesheet::before {
+  width: 80%;
+}
+#skills #list .list-item-1 .item .line.line-js::before,
+#skills #list .list-item-2 .item .line.line-js::before {
+  width: 70%;
+}
+#skills #list .list-item-1 .item .line.line-framework::before,
+#skills #list .list-item-2 .item .line.line-framework::before {
+  width: 73%;
+}
+#skills #list .list-item-1 .item .line.line-java-php::before,
+#skills #list .list-item-2 .item .line.line-java-php::before {
+  width: 60%;
+}
+#skills #list .list-item-1 .item .line.line-sql::before,
+#skills #list .list-item-2 .item .line.line-sql::before {
+  width: 65%;
+}
+#skills #list .list-item-1 .item .line.line-cms::before,
+#skills #list .list-item-2 .item .line.line-cms::before {
+  width: 90%;
+}
+#skills #list .list-item-1 .item .line.line-photoshop::before,
+#skills #list .list-item-2 .item .line.line-photoshop::before {
+  width: 55%;
 }/*# sourceMappingURL=custom.css.map */

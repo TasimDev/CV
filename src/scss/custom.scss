@@ -136,7 +136,7 @@ li {
                 .list-group {
                     flex-direction: row;
                     font-size: 1.1rem;
-                    
+
 
                     @media screen and (max-width: 700px) {
                         flex-direction: column;
@@ -154,4 +154,85 @@ li {
 
 
 
+}
+
+/*************Skills*************/
+#skills {
+    #list {
+        flex-direction: row;
+
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+        }
+
+        .list-item-1,
+        .list-item-2 {
+            width: 50%;
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
+            }
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2em;
+
+
+                .item-title {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .line {
+                    position: relative;
+
+                    width: 100%;
+                    height: 8px;
+                    background: #ff7b7b;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        background: #DD2424;
+                    }
+                }
+
+                .line.line-html::before {
+                    width: 100%;
+                }
+
+                .line.line-stylesheet::before {
+                    width: 80%;
+                }
+
+                .line.line-js::before {
+                    width: 70%;
+                }
+
+                .line.line-framework::before {
+                    width: 73%;
+                }
+
+                .line.line-java-php::before {
+                    width: 60%;
+                }
+
+                .line.line-sql::before {
+                    width: 65%;
+                }
+
+                .line.line-cms::before {
+                    width: 90%;
+                }
+
+                .line.line-photoshop::before {
+                    width: 55%;
+                }
+            }
+        }
+
+
+    }
 }
