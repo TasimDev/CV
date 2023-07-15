@@ -8,6 +8,7 @@ $phone: 478px;
 * {
     font-family: 'Poppins', sans-serif;
     transition: all .2s ease-in-out;
+
 }
 
 a {
@@ -69,26 +70,34 @@ li {
 
 /*****************Main*********/
 #main {
-    #profile_img {
-        width: 376px;
 
-        @media (min-width: 770px) {
-            width: 700px;
+    @media (max-width: 900px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    #profile_img {
+
+        width: 700px;
+
+        @media (max-width: 770px) {
+            width: 376px;
         }
 
-        @media (max-width: 428px) {
-            width: 290px;
+        @media (max-width: 360px) {
+            width: 180px;
         }
     }
 
     .main-title {
+        margin-top: 6em;
         margin-left: 6em;
-        margin-bottom: 12em;
+
 
         @media (min-width: 772px) {
             margin: 0;
         }
-
-      
     }
 }

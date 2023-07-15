@@ -58,22 +58,28 @@ li {
 }
 
 /*****************Main*********/
-#main #profile_img {
-  width: 376px;
-}
-@media (min-width: 770px) {
-  #main #profile_img {
-    width: 700px;
+@media (max-width: 900px) {
+  #main {
+    flex-direction: column;
+    justify-content: center;
   }
 }
-@media (max-width: 428px) {
+#main #profile_img {
+  width: 700px;
+}
+@media (max-width: 770px) {
   #main #profile_img {
-    width: 290px;
+    width: 376px;
+  }
+}
+@media (max-width: 360px) {
+  #main #profile_img {
+    width: 180px;
   }
 }
 #main .main-title {
+  margin-top: 6em;
   margin-left: 6em;
-  margin-bottom: 12em;
 }
 @media (min-width: 772px) {
   #main .main-title {
