@@ -58,31 +58,41 @@ li {
 }
 
 /*****************Main*********/
-@media (max-width: 900px) {
+#main {
+  justify-content: space-between;
+}
+@media screen and (max-width: 1160px) {
   #main {
     flex-direction: column;
     justify-content: center;
   }
 }
-#main #profile_img {
-  width: 700px;
-}
-@media (max-width: 770px) {
-  #main #profile_img {
-    width: 376px;
-  }
-}
-@media (max-width: 360px) {
-  #main #profile_img {
-    width: 180px;
+@media screen and (max-width: 600px) {
+  #main {
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }
 #main .main-title {
-  margin-top: 6em;
-  margin-left: 6em;
+  width: 50%;
 }
-@media (min-width: 772px) {
+@media screen and (max-width: 1160px) {
   #main .main-title {
-    margin: 0;
+    width: 100%;
+  }
+}
+#main .image {
+  width: 50%;
+  justify-self: end;
+}
+@media screen and (max-width: 1160px) {
+  #main .image {
+    width: 100%;
+    justify-self: end;
+  }
+}
+@media screen and (max-width: 600px) {
+  #main .image {
+    justify-self: end;
   }
 }/*# sourceMappingURL=custom.css.map */
