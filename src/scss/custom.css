@@ -251,4 +251,47 @@ li {
 #resume #resume-body .info {
   padding-left: 40px;
   border-left: 2px solid #ff7b7b;
+}
+
+/*************SERVICES************/
+#services #sevices-body #webdev {
+  flex-direction: row;
+}
+@media (max-width: 1000px) {
+  #services #sevices-body #webdev {
+    flex-direction: column;
+  }
+}
+#services #sevices-body #webdev .information {
+  width: 40%;
+}
+@media (max-width: 1000px) {
+  #services #sevices-body #webdev .information {
+    width: 100%;
+    text-align: justify;
+  }
+}
+#services #sevices-body #webdev .image {
+  width: 50%;
+}
+@media (max-width: 1000px) {
+  #services #sevices-body #webdev .image {
+    width: 100%;
+  }
+}
+#services #sevices-body #digital-art {
+  flex-direction: row-reverse;
+}
+@media (max-width: 1000px) {
+  #services #sevices-body #digital-art {
+    flex-direction: column;
+  }
+}
+#services #sevices-body #digital-art .information {
+  width: 40%;
+}
+@media (max-width: 1000px) {
+  #services #sevices-body #digital-art .information {
+    width: 100%;
+  }
 }/*# sourceMappingURL=custom.css.map */

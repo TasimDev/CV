@@ -283,3 +283,52 @@ li {
         }
     }
 }
+
+/*************SERVICES************/
+#services {
+    #sevices-body {
+        #webdev {
+            flex-direction: row;
+
+            @media (max-width: 1000px) {
+                flex-direction: column;
+            }
+
+            .information {
+                width: 40%;
+
+                @media (max-width: 1000px) {
+                    width: 100%;
+                    text-align: justify;
+                }
+            }
+
+            .image {
+                width: 50%;
+
+                @media (max-width: 1000px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        #digital-art {
+            flex-direction: row-reverse;
+
+            @media (max-width: 1000px) {
+                flex-direction: column;
+            }
+
+            .information {
+                width: 40%;
+
+                @media (max-width: 1000px) {
+                    width: 100%;
+                }
+            }
+        }
+
+       
+
+    }
+}
