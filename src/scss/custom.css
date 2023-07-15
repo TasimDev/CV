@@ -76,6 +76,14 @@ li {
 #main .main-title {
   width: 50%;
 }
+#main .main-title .line {
+  height: 180px;
+}
+@media screen and (max-width: 770px) {
+  #main .main-title .line {
+    height: 140px;
+  }
+}
 @media screen and (max-width: 1160px) {
   #main .main-title {
     width: 100%;

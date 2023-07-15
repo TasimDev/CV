@@ -117,6 +117,14 @@ li {
     .main-title {
         width: 50%;
 
+        .line {
+            height: 180px;
+
+            @media screen and (max-width: 770px) {
+                height: 140px;
+            }
+        }
+
         @media screen and (max-width: 1160px) {
             width: 100%;
         }
