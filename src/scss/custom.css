@@ -103,4 +103,35 @@ li {
   #main .image {
     justify-self: end;
   }
+}
+
+/***************About**********/
+@media screen and (max-width: 1100px) {
+  #about .container #about-info {
+    flex-direction: column;
+  }
+}
+#about .container #about-info #image,
+#about .container #about-info #info {
+  width: 50%;
+}
+@media screen and (max-width: 1100px) {
+  #about .container #about-info #image,
+  #about .container #about-info #info {
+    width: 100%;
+  }
+}
+#about .container #about-info #info .list-group {
+  flex-direction: row;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 700px) {
+  #about .container #about-info #info .list-group {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 468px) {
+  #about .container #about-info #info .list-group {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=custom.css.map */

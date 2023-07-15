@@ -69,38 +69,6 @@ li {
 }
 
 /*****************Main*********/
-// #main {
-
-//     @media (max-width: 900px) {
-//         flex-direction: column;
-//         justify-content: center;
-//     }
-
-
-
-//     #profile_img {
-
-//         width: 700px;
-
-//         @media (max-width: 770px) {
-//             width: 376px;
-//         }
-
-//         @media (max-width: 360px) {
-//             width: 180px;
-//         }
-//     }
-
-//     .main-title {
-//         margin-top: 6em;
-//         margin-left: 6em;
-
-
-//         @media (min-width: 772px) {
-//             margin: 0;
-//         }
-//     }
-// }
 #main {
     justify-content: space-between;
 
@@ -143,4 +111,47 @@ li {
             justify-self: end;
         }
     }
+}
+
+/***************About**********/
+#about {
+    .container {
+        #about-info {
+
+
+            @media screen and (max-width: 1100px) {
+                flex-direction: column;
+            }
+
+            #image,
+            #info {
+                width: 50%;
+
+                @media screen and (max-width: 1100px) {
+                    width: 100%;
+                }
+            }
+
+            #info {
+                .list-group {
+                    flex-direction: row;
+                    font-size: 1.1rem;
+                    
+
+                    @media screen and (max-width: 700px) {
+                        flex-direction: column;
+                    }
+
+                    @media screen and (max-width: 468px) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+
 }
