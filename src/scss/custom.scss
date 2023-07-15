@@ -236,3 +236,50 @@ li {
 
     }
 }
+
+/*************RESUME**************/
+#resume {
+    #resume-body {
+        flex-direction: row;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+        }
+
+        .title {
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+        }
+
+        i {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ff7b7b;
+            font-size: 1.2rem;
+        }
+
+        .icon {
+            align-items: center;
+            margin-bottom: 12px;
+
+            .title-info {
+                font-size: 1em;
+                font-weight: 800;
+                text-transform: uppercase;
+                padding-left: 10px;
+                color: #ff7b7b;
+            }
+        }
+
+        .info {
+            padding-left: 40px;
+            border-left: 2px solid #ff7b7b;
+        }
+    }
+}

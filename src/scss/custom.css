@@ -211,4 +211,44 @@ li {
 #skills #list .list-item-1 .item .line.line-photoshop::before,
 #skills #list .list-item-2 .item .line.line-photoshop::before {
   width: 55%;
+}
+
+/*************RESUME**************/
+#resume #resume-body {
+  flex-direction: row;
+}
+@media screen and (max-width: 900px) {
+  #resume #resume-body {
+    flex-direction: column;
+  }
+}
+#resume #resume-body .title {
+  margin-bottom: 16px;
+}
+#resume #resume-body h3 {
+  color: var(--primary-color);
+}
+#resume #resume-body i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff7b7b;
+  font-size: 1.2rem;
+}
+#resume #resume-body .icon {
+  align-items: center;
+  margin-bottom: 12px;
+}
+#resume #resume-body .icon .title-info {
+  font-size: 1em;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-left: 10px;
+  color: #ff7b7b;
+}
+#resume #resume-body .info {
+  padding-left: 40px;
+  border-left: 2px solid #ff7b7b;
 }/*# sourceMappingURL=custom.css.map */
