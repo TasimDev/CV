@@ -10,6 +10,7 @@ if (!empty($email) && !empty($message)) {
         $subject = "From: $fname <$email>";
         $body = "Name: $fname $lname \nEmail: $email \n\nMessage: $message";
         $sender = "From: $email";
+        mail($receiver, $subject, $body, $sender);
         if (mail($receiver, $subject, $body, $sender)) {
             echo "Message sent!";
         } else {
