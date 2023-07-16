@@ -78,13 +78,13 @@ const form = document.querySelector("form"),
     statustxt = form.querySelector("btn");
 
 form.onsubmit = (e) => {
-    e.preventDefault();
-    let response;
+
+
     let xhr = new XMLHttpRequest(); //creating new cml object
     xhr.open("POST", "message.php", true); //sending post requist to message.php file
     xhr.onload = () => { //on jax loaded
         if (xhr.readyState == 4 && xhr.status == 200) {//status  response is 200 and 4 means no arrors
-            response = xhr.response;
+            let response = xhr.response;
             Toastify({
                 text: response,
                 duration: 3000,
@@ -97,11 +97,13 @@ form.onsubmit = (e) => {
 
             }).showToast();
         }
+
     }
     let formData = new FormData();
     xhr.send(formData);
 
 
+    e.preventDefault();
 
 }
 
