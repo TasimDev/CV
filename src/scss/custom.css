@@ -3,9 +3,12 @@
   --primary-color: #DD2424;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   font-family: "Poppins", sans-serif;
-  transition: all 0.2s ease-in-out;
 }
 
 a {
@@ -21,6 +24,7 @@ li {
   position: fixed;
   top: 3rem;
   right: 3rem;
+  transition: all 0.3s ease-in-out;
 }
 #getintouch:hover {
   font-size: larger;
@@ -41,6 +45,7 @@ li {
 /*************Navbar*********/
 #navbar {
   transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
 }
 #navbar a {
   position: relative;
@@ -337,7 +342,7 @@ li {
   padding: 0.75em 1.2em;
   resize: none;
   overflow: auto;
-  border: 1px solid gray;
+  border: 1px solid rgba(128, 128, 128, 0.452);
 }
 #connect form textarea {
   height: 200px;
