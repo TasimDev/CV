@@ -328,7 +328,94 @@ li {
             }
         }
 
-       
 
+
+    }
+}
+
+/**************Connect**************/
+
+
+#connect {
+    opacity: 0;
+    z-index: -3;
+
+    .container {
+        transform: translateX(200%);
+        position: relative;
+        transition: all .4s ease-in-out;
+
+        .left,
+        .right {
+            width: 50%;
+        }
+
+        .left {
+            @media (max-width: 1000px) {
+                width: 100%;
+            }
+        }
+
+        .icon {
+            top: 1.1em;
+            right: 1.1em;
+            color: white;
+            font-size: 1.6em;
+            cursor: pointer;
+
+            @media (max-width: 1000px) {
+                color: black;
+            }
+        }
+
+        .right {
+            @media (max-width: 1000px) {
+                display: none;
+            }
+        }
+    }
+
+    form {
+
+        input,
+        textarea {
+            padding: 0.75em 1.2em;
+            resize: none;
+            overflow: auto;
+            border: 1px solid gray;
+        }
+
+        textarea {
+            height: 200px;
+        }
+
+        .names {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+
+            input {
+                width: 50%;
+            }
+        }
+
+        .btn {
+            width: 230px;
+            background: var(--primary-color);
+            outline: none;
+            color: white;
+            text-transform: uppercase;
+            border-radius: 0;
+            border: none;
+        }
+    }
+}
+
+#connect.active {
+    opacity: 1;
+    z-index: 6;
+
+    .container {
+        transform: translateX(0);
     }
 }

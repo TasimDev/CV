@@ -294,4 +294,76 @@ li {
   #services #sevices-body #digital-art .information {
     width: 100%;
   }
+}
+
+/**************Connect**************/
+#connect {
+  opacity: 0;
+  z-index: -3;
+}
+#connect .container {
+  transform: translateX(200%);
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+#connect .container .left,
+#connect .container .right {
+  width: 50%;
+}
+@media (max-width: 1000px) {
+  #connect .container .left {
+    width: 100%;
+  }
+}
+#connect .container .icon {
+  top: 1.1em;
+  right: 1.1em;
+  color: white;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  #connect .container .icon {
+    color: black;
+  }
+}
+@media (max-width: 1000px) {
+  #connect .container .right {
+    display: none;
+  }
+}
+#connect form input,
+#connect form textarea {
+  padding: 0.75em 1.2em;
+  resize: none;
+  overflow: auto;
+  border: 1px solid gray;
+}
+#connect form textarea {
+  height: 200px;
+}
+#connect form .names {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+#connect form .names input {
+  width: 50%;
+}
+#connect form .btn {
+  width: 230px;
+  background: var(--primary-color);
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: none;
+}
+
+#connect.active {
+  opacity: 1;
+  z-index: 6;
+}
+#connect.active .container {
+  transform: translateX(0);
 }/*# sourceMappingURL=custom.css.map */
