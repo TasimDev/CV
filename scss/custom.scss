@@ -4,7 +4,9 @@ $phone: 478px;
 :root {
     --primary-color: #DD2424;
 }
-
+html{
+overflow-x:hidden;
+}
 body {
     width: 100%;
     height: 100%;
