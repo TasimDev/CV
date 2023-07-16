@@ -97,9 +97,8 @@ form.onsubmit = (e) => {
 
             }).showToast();
         }
-
     }
-    let formData = new FormData();
+    let formData = new FormData(form);
     xhr.send(formData);
 
 
