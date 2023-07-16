@@ -5,8 +5,9 @@ $phone: 478px;
     --primary-color: #DD2424;
 }
 
-
-
+body {
+    overflow-x: hidden;
+}
 
 * {
     font-family: 'Poppins', sans-serif;
