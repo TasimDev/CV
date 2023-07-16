@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 :root {
   --primary-color: #DD2424;
 }
@@ -33,6 +34,7 @@ li {
   right: 3rem;
   transition: all 0.3s ease-in-out;
 }
+
 #getintouch:hover {
   font-size: larger;
 }
@@ -45,6 +47,7 @@ li {
   left: 0;
   border-right: 1px solid rgba(128, 128, 128, 0.212);
 }
+
 #header .social a:hover {
   color: var(--primary-color);
 }
@@ -54,6 +57,7 @@ li {
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
 }
+
 #navbar a {
   position: relative;
   -webkit-text-stroke: 1px #fff;
@@ -61,6 +65,7 @@ li {
   padding: 0 10px;
   text-align: center;
 }
+
 #navbar a:hover {
   color: #fff;
 }
@@ -73,44 +78,53 @@ li {
 #main {
   justify-content: space-between;
 }
+
 @media screen and (max-width: 1160px) {
   #main {
     flex-direction: column;
     justify-content: center;
   }
 }
+
 @media screen and (max-width: 600px) {
   #main {
     flex-direction: column;
     justify-content: space-evenly;
   }
 }
+
 #main .main-title {
   width: 50%;
 }
+
 #main .main-title .line {
   height: 180px;
 }
+
 @media screen and (max-width: 770px) {
   #main .main-title .line {
     height: 140px;
   }
 }
+
 @media screen and (max-width: 1160px) {
   #main .main-title {
     width: 100%;
   }
 }
+
 #main .image {
   width: 50%;
   justify-self: end;
 }
+
 @media screen and (max-width: 1160px) {
   #main .image {
     width: 100%;
     justify-self: end;
   }
 }
+
 @media screen and (max-width: 600px) {
   #main .image {
     justify-self: end;
@@ -123,25 +137,31 @@ li {
     flex-direction: column;
   }
 }
+
 #about .container #about-info #image,
 #about .container #about-info #info {
   width: 50%;
 }
+
 @media screen and (max-width: 1100px) {
+
   #about .container #about-info #image,
   #about .container #about-info #info {
     width: 100%;
   }
 }
+
 #about .container #about-info #info .list-group {
   flex-direction: row;
   font-size: 1.1rem;
 }
+
 @media screen and (max-width: 700px) {
   #about .container #about-info #info .list-group {
     flex-direction: column;
   }
 }
+
 @media screen and (max-width: 468px) {
   #about .container #about-info #info .list-group {
     font-size: 1rem;
@@ -152,32 +172,39 @@ li {
 #skills #list {
   flex-direction: row;
 }
+
 @media screen and (max-width: 700px) {
   #skills #list {
     flex-direction: column;
   }
 }
+
 #skills #list .list-item-1,
 #skills #list .list-item-2 {
   width: 50%;
 }
+
 @media screen and (max-width: 700px) {
+
   #skills #list .list-item-1,
   #skills #list .list-item-2 {
     width: 100%;
   }
 }
+
 #skills #list .list-item-1 .item,
 #skills #list .list-item-2 .item {
   display: flex;
   flex-direction: column;
   margin-bottom: 2em;
 }
+
 #skills #list .list-item-1 .item .item-title,
 #skills #list .list-item-2 .item .item-title {
   display: flex;
   justify-content: space-between;
 }
+
 #skills #list .list-item-1 .item .line,
 #skills #list .list-item-2 .item .line {
   position: relative;
@@ -185,6 +212,7 @@ li {
   height: 8px;
   background: #ff7b7b;
 }
+
 #skills #list .list-item-1 .item .line::before,
 #skills #list .list-item-2 .item .line::before {
   content: "";
@@ -192,34 +220,42 @@ li {
   height: 100%;
   background: #DD2424;
 }
+
 #skills #list .list-item-1 .item .line.line-html::before,
 #skills #list .list-item-2 .item .line.line-html::before {
   width: 100%;
 }
+
 #skills #list .list-item-1 .item .line.line-stylesheet::before,
 #skills #list .list-item-2 .item .line.line-stylesheet::before {
   width: 80%;
 }
+
 #skills #list .list-item-1 .item .line.line-js::before,
 #skills #list .list-item-2 .item .line.line-js::before {
   width: 70%;
 }
+
 #skills #list .list-item-1 .item .line.line-framework::before,
 #skills #list .list-item-2 .item .line.line-framework::before {
   width: 73%;
 }
+
 #skills #list .list-item-1 .item .line.line-java-php::before,
 #skills #list .list-item-2 .item .line.line-java-php::before {
   width: 60%;
 }
+
 #skills #list .list-item-1 .item .line.line-sql::before,
 #skills #list .list-item-2 .item .line.line-sql::before {
   width: 65%;
 }
+
 #skills #list .list-item-1 .item .line.line-cms::before,
 #skills #list .list-item-2 .item .line.line-cms::before {
   width: 90%;
 }
+
 #skills #list .list-item-1 .item .line.line-photoshop::before,
 #skills #list .list-item-2 .item .line.line-photoshop::before {
   width: 55%;
@@ -229,17 +265,21 @@ li {
 #resume #resume-body {
   flex-direction: row;
 }
+
 @media screen and (max-width: 900px) {
   #resume #resume-body {
     flex-direction: column;
   }
 }
+
 #resume #resume-body .title {
   margin-bottom: 16px;
 }
+
 #resume #resume-body h3 {
   color: var(--primary-color);
 }
+
 #resume #resume-body i {
   width: 30px;
   height: 30px;
@@ -249,10 +289,12 @@ li {
   color: #ff7b7b;
   font-size: 1.2rem;
 }
+
 #resume #resume-body .icon {
   align-items: center;
   margin-bottom: 12px;
 }
+
 #resume #resume-body .icon .title-info {
   font-size: 1em;
   font-weight: 800;
@@ -260,6 +302,7 @@ li {
   padding-left: 10px;
   color: #ff7b7b;
 }
+
 #resume #resume-body .info {
   padding-left: 40px;
   border-left: 2px solid #ff7b7b;
@@ -269,39 +312,48 @@ li {
 #services #sevices-body #webdev {
   flex-direction: row;
 }
+
 @media (max-width: 1000px) {
   #services #sevices-body #webdev {
     flex-direction: column;
   }
 }
+
 #services #sevices-body #webdev .information {
   width: 40%;
 }
+
 @media (max-width: 1000px) {
   #services #sevices-body #webdev .information {
     width: 100%;
     text-align: justify;
   }
 }
+
 #services #sevices-body #webdev .image {
   width: 50%;
 }
+
 @media (max-width: 1000px) {
   #services #sevices-body #webdev .image {
     width: 100%;
   }
 }
+
 #services #sevices-body #digital-art {
   flex-direction: row-reverse;
 }
+
 @media (max-width: 1000px) {
   #services #sevices-body #digital-art {
     flex-direction: column;
   }
 }
+
 #services #sevices-body #digital-art .information {
   width: 40%;
 }
+
 @media (max-width: 1000px) {
   #services #sevices-body #digital-art .information {
     width: 100%;
@@ -313,20 +365,24 @@ li {
   opacity: 0;
   z-index: -3;
 }
+
 #connect .container {
   transform: translateX(200%);
   position: relative;
   transition: all 0.4s ease-in-out;
 }
+
 #connect .container .left,
 #connect .container .right {
   width: 50%;
 }
+
 @media (max-width: 1000px) {
   #connect .container .left {
     width: 100%;
   }
 }
+
 #connect .container .icon {
   top: 1.1em;
   right: 1.1em;
@@ -334,16 +390,19 @@ li {
   font-size: 1.6em;
   cursor: pointer;
 }
+
 @media (max-width: 1000px) {
   #connect .container .icon {
     color: black;
   }
 }
+
 @media (max-width: 1000px) {
   #connect .container .right {
     display: none;
   }
 }
+
 #connect form input,
 #connect form textarea {
   padding: 0.75em 1.2em;
@@ -351,17 +410,21 @@ li {
   overflow: auto;
   border: 1px solid rgba(128, 128, 128, 0.452);
 }
+
 #connect form textarea {
   height: 200px;
 }
+
 #connect form .names {
   display: flex;
   justify-content: space-between;
   gap: 8px;
 }
+
 #connect form .names input {
   width: 50%;
 }
+
 #connect form .btn {
   width: 230px;
   background: var(--primary-color);
@@ -376,6 +439,9 @@ li {
   opacity: 1;
   z-index: 6;
 }
+
 #connect.active .container {
   transform: translateX(0);
-}/*# sourceMappingURL=custom.css.map */
+}
+
+/*# sourceMappingURL=custom.css.map */
